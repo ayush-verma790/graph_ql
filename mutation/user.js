@@ -22,7 +22,7 @@ export const newuser = async (_, { input: { title, description, completed = fals
 }
 export const updateUserById = async (_, { input: { id, title, description, completed = false } }) => {
     try {
-        if (!id) return new Error('id is missing')
+        if (!id) return new Error('not able to find id')
         const data = await UserModel.findByIdAndUpdate(id, { $set: { title, description, completed } });
         return data;
     } catch (error) {

@@ -21,4 +21,4 @@ const server = new ApolloServer({
     resolvers
 })
 const { url } = await startStandaloneServer(server, { listen: { port: 9000 } });
-console.log(`server is running at ${url}`)
+console.log(`server started ${url}`)

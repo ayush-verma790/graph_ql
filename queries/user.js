@@ -3,9 +3,10 @@ import UserModel from '../model/UserModel.js';
 import mongoose from 'mongoose';
 export const getAllUserList = async () => {
     try {
-        const data = await UserModel.find();
-        console.log({ data })
-        return data;
+      const res=await UserModel.find();
+        
+        
+        return res;
     } catch (error) {
         console.log(error.message)
     }

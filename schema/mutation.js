@@ -9,7 +9,7 @@ export const Mutation = `
         description : String!
         completed : String
     }
-    input InputForUpdate {
+    input InputUpdate {
         id : ID!
         title : String!
         description : String!
